@@ -13,7 +13,7 @@ public class Runner {
         System.out.println("Integers before shuffle: " + Arrays.toString(ints));
         integers.shuffle();
         System.out.println("Integers after shuffle: ");
-        for (Integer number : integers.array) {
+        for (Integer number : integers.getArray()) {
             System.out.print(number + " ");
         }
         System.out.println();
@@ -21,8 +21,12 @@ public class Runner {
         System.out.println("Strings before shuffle: " + Arrays.toString(strings));
         System.out.println("Strings after shuffle: ");
         stringsToShuffle.shuffle();
-        for (String string : stringsToShuffle.array) {
+        for (String string : stringsToShuffle.getArray()) {
             System.out.print(string + " ");
         }
     }
+
+
 }
+
+

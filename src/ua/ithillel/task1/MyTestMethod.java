@@ -15,10 +15,8 @@ public class MyTestMethod {
     public static <T extends Number> double calcSum(T[] array, T value) {
         double sum = 0;
         for (T t : array) {
-            if (!(t == null)) {
-                if (t.doubleValue() > value.doubleValue()) {
-                    sum += t.doubleValue();
-                }
+            if (t.doubleValue() > value.doubleValue()) {
+                sum += t.doubleValue();
             }
         }
         return sum;
